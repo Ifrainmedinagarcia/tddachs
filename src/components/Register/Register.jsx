@@ -46,6 +46,7 @@ const Register = () => {
     const {nombre, apellido, email, region, genero, password} = e.target.elements
     const elements = new Array(nombre, apellido, email, region, genero, password)
     elements.map(el => validateInputs(el.value, el.name))
+    console.log(genero.value);
     if (!canSubmit({nombre, apellido, email, region, genero, password})) return
     await Promise.resolve()
     setMessageSuccess("Te registraste con éxito")
@@ -70,7 +71,6 @@ const Register = () => {
         <Grid item xs={6}>
           <Typography className='title' align='center' component='h2' variant='h6'>Regístrate y disfruta de nuestra plataforma</Typography>
         </Grid>
-
 
         <Grid item className='container__form'>
 
