@@ -1,5 +1,5 @@
 export const valueRadioButtons = ["Masculino", "Femenino", "Otro"]
-export const optionsValueSelect = ["", "América", "Europa", "África", "Asia", "Ocianía"]
+export const optionsValueSelect = ["", "América", "Europa", "África", "Asia", "Oceanía"]
 export const initialStateErrorMessages = {
   nombre: "",
   apellido: "",

@@ -33,17 +33,17 @@ describe('When the component is mounted', () => {
         expect(femenino).not.toBeChecked()
         expect(otro).not.toBeChecked()
     })
-    test('The select input should contain the following values (Empyt, América, Europa, África, Asia, Ocianía) ', () => {
+    test('The select input should contain the following values (Empyt, América, Europa, África, Asia, Oceanía) ', () => {
         const selectInput = screen.getByLabelText(/región/i)
         const valuesSelectInput = within(selectInput).getAllByRole("option")
-        const [empty, america, europa, africa, asia, ociania] = valuesSelectInput
+        const [empty, america, europa, africa, asia, oceania] = valuesSelectInput
         expect(valuesSelectInput).toHaveLength(6)
         expect(empty).toHaveValue("")
         expect(america).toHaveValue("América")
         expect(europa).toHaveValue("Europa")
         expect(africa).toHaveValue("África")
         expect(asia).toHaveValue("Asia")
-        expect(ociania).toHaveValue("Ocianía")
+        expect(oceania).toHaveValue("Oceanía")
     })
     
     test('The form should contain a button with the name "Registrarse"', () => {
